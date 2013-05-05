@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		808452C4169B385D003406D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808452C3169B385D003406D4 /* UIKit.framework */; };
 		808452C6169B385D003406D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808452C5169B385D003406D4 /* Foundation.framework */; };
-		808452C8169B385D003406D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808452C7169B385D003406D4 /* CoreGraphics.framework */; };
 		808452CE169B385D003406D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 808452CC169B385D003406D4 /* InfoPlist.strings */; };
 		808452D0169B385D003406D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808452CF169B385D003406D4 /* main.m */; };
 		808452D4169B385D003406D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 808452D3169B385D003406D4 /* AppDelegate.m */; };
 		808452D6169B385D003406D4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 808452D5169B385D003406D4 /* Default.png */; };
 		808452D8169B385D003406D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808452D7169B385D003406D4 /* Default@2x.png */; };
 		808452DA169B385D003406D4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 808452D9169B385D003406D4 /* Default-568h@2x.png */; };
+		808452E3169B39E1003406D4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808452E1169B39E1003406D4 /* MainViewController.m */; };
+		808452E4169B39E1003406D4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808452E2169B39E1003406D4 /* MainViewController.xib */; };
+		808452EC169DDD4A003406D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808452C7169B385D003406D4 /* CoreGraphics.framework */; };
+		808452EE169DDD9E003406D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808452ED169DDD9E003406D4 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		808452D5169B385D003406D4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		808452D7169B385D003406D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		808452D9169B385D003406D4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		808452E0169B39E1003406D4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewControllers/MainViewController.h; sourceTree = "<group>"; };
+		808452E1169B39E1003406D4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/MainViewController.m; sourceTree = "<group>"; };
+		808452E2169B39E1003406D4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ViewControllers/MainViewController.xib; sourceTree = "<group>"; };
+		808452ED169DDD9E003406D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808452EE169DDD9E003406D4 /* QuartzCore.framework in Frameworks */,
+				808452EC169DDD4A003406D4 /* CoreGraphics.framework in Frameworks */,
 				808452C4169B385D003406D4 /* UIKit.framework in Frameworks */,
 				808452C6169B385D003406D4 /* Foundation.framework in Frameworks */,
-				808452C8169B385D003406D4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,7 @@
 		808452C2169B385D003406D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				808452ED169DDD9E003406D4 /* QuartzCore.framework */,
 				808452C3169B385D003406D4 /* UIKit.framework */,
 				808452C5169B385D003406D4 /* Foundation.framework */,
 				808452C7169B385D003406D4 /* CoreGraphics.framework */,
@@ -81,6 +90,9 @@
 				808452D2169B385D003406D4 /* AppDelegate.h */,
 				808452D3169B385D003406D4 /* AppDelegate.m */,
 				808452CA169B385D003406D4 /* Supporting Files */,
+				808452E0169B39E1003406D4 /* MainViewController.h */,
+				808452E1169B39E1003406D4 /* MainViewController.m */,
+				808452E2169B39E1003406D4 /* MainViewController.xib */,
 			);
 			path = QuartzCoreStudy;
 			sourceTree = "<group>";
@@ -154,6 +166,7 @@
 				808452D6169B385D003406D4 /* Default.png in Resources */,
 				808452D8169B385D003406D4 /* Default@2x.png in Resources */,
 				808452DA169B385D003406D4 /* Default-568h@2x.png in Resources */,
+				808452E4169B39E1003406D4 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +179,7 @@
 			files = (
 				808452D0169B385D003406D4 /* main.m in Sources */,
 				808452D4169B385D003406D4 /* AppDelegate.m in Sources */,
+				808452E3169B39E1003406D4 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +286,7 @@
 				808452DF169B385D003406D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
